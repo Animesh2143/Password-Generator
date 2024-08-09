@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gola1"></div>
+    <div class="gola2"></div>
+    <div class="container">
+
+        <h1>Password Generator</h1>
+
+        <div class="display-container">
+            <input type="text" readonly placeholder="Password" class="display" data-passwordDisplay>
+            <button class="cpy-btn" data-copy>
+                <span data-copyMsg class="toolkit"></span>
+                <img src="copy-icon.svg" alt="copy" width="24" height="24" />
+            </button>
+        </div>
+
+        <div class="input-container">
+            <div class="length-container">
+                <p>Password Length</p>
+                <p data-lengthNumber>0</p>
+            </div>
+            
+            <input class="slider" type="range" min="1" max="20" step="1" data-lengthSlider>
+
+            <div class="check">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Includes UpperCase letters</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="lowercase">
+                <label for="uppercase">Includes LowerCase letters</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="numbers">
+                <label for="uppercase">Includes Numbers </label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="symbols">
+                <label for="uppercase">Includes Symbol</label>
+            </div>
+
+            <div class="strength-container">
+                <p>Strength</p>
+                <div data-indicator></div>
+            </div>
+
+            <button class="generateButton">Generate Password</button>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script  src="script.js"></script>
+
+</body>
+</html>
